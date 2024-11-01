@@ -51,7 +51,7 @@ img {
 #legal {
   width: 284px;
   left: 8px;
-  top: 542px;
+  top: 544px;
 }
 
 
@@ -212,7 +212,7 @@ img {
   animation-duration: 1s;
   animation-timing-function: linear;
   animation-direction: alternate;
-  animation-iteration-count: 20;
+  animation-iteration-count: 10;
 }
 
 

@@ -14,47 +14,47 @@
         TweenLite.lagSmoothing(0);
         var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
 
-      // setTimeout(() => console.log('aaa'), 15000)
-      // setTimeout(() => console.log('aaa'), 30000)
-      tl.from("#schirm", 0.8, { opacity: 1 })
-        .from("#nutrilon_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
-        .to("#nutrilon_logo", 0.4, {x: -70, y: -25, scale: 0.66}, '+=0.4')
-        .from("#dm_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
-        .to("#mom", 0.5, {scale: 1, y: -2}, '-=.1')
-        .from("#ellipse", 0.5, { scale: 0.7, opacity: 0}, '-=0.4')
-        .from("#slogan", 0.5, { scale: 0.7, opacity: 0}, '-=.3')
-        .from("#million", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
-        .from("#period", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
+        // setTimeout(() => console.log('aaa'), 15000)
+        // setTimeout(() => console.log('aaa'), 30000)
+        tl.from("#schirm", 0.8, { opacity: 1 })
+          .from("#nutrilon_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
+          .to("#nutrilon_logo", 0.4, {x: -70, y: -25, scale: 0.66}, '+=0.4')
+          .from("#dm_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
+          .to("#mom", 0.5, {scale: 1, y: -2}, '-=.1')
+          .from("#ellipse", 0.5, { scale: 0.7, opacity: 0}, '-=0.4')
+          .from("#slogan", 0.5, { scale: 0.7, opacity: 0}, '-=.3')
+          .from("#million", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
+          .from("#period", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
 
-        .to("#blue_bottom", 0.4, {y: -600}, '+=3.6')
-        .to("#legal", 0.3, {opacity: 0}, '-=0.4')
-        .from("#nutrilon_3", 0.5, {opacity: 0, x: -100, scale: 0.6}, '-=0.4')
-        .from("#nutrilon_4", 0.5, {opacity: 0, x: 100, scale: 0.6}, '-=0.4')
-        .from("#txt01", 0.5, {opacity: 0, x: 200}, '-=0.1')
-        .to("#nutrilon_3", 0, {animationName: 'mech_pack3-anim'})
-        .to("#nutrilon_4", 0, {animationName: 'mech_pack4-anim'})
-        .from("#txt02", 0.5, {opacity: 0, x: 200}, '+=0.3')
-        .from("#txt03", 0.5, {opacity: 0, x: 200}, '+=0.3')
-        .from("#prize_cert", 0.5, {opacity: 0,  scale: 0.6, x: 60}, '-=0.2')
-        .from("#prize_mill", 0.5, {opacity: 0,  scale: 0.6, x: -60}, '-=0.2')
-        .from("#prize_cert_label", 0.5, {opacity: 0,  scale: 0.6,}, '-=0.2')
-        .from("#prize_mill_label", 0.5, {opacity: 0, scale: 0.6,}, '-=0.2')
-        .to("#prize_mill_label", 0.5, {rotation: -10, scale: 1.1,})
-        .to("#prize_mill_label", 0.5, {rotation: 0, scale: 1,})
-        // .to("#prize_mill_label", 0.5, {rotation: -10, scale: 1.1,})
-        // .to("#prize_mill_label", 0.5, {rotation: 0, scale: 1,})
+          .to("#blue_bottom", 0.4, {y: -600}, '+=3.6')
+          .to("#legal", 0.3, {opacity: 0}, '-=0.4')
+          .from("#nutrilon_3", 0.5, {opacity: 0, x: -100, scale: 0.6}, '-=0.4')
+          .from("#nutrilon_4", 0.5, {opacity: 0, x: 100, scale: 0.6}, '-=0.4')
+          .from("#txt01", 0.5, {opacity: 0, x: 200}, '-=0.1')
+          .to("#nutrilon_3", 0, {animationName: 'mech_pack3-anim'})
+          .to("#nutrilon_4", 0, {animationName: 'mech_pack4-anim'})
+          .from("#txt02", 0.5, {opacity: 0, x: 200}, '+=0.3')
+          .from("#txt03", 0.5, {opacity: 0, x: 200}, '+=0.3')
+          .from("#prize_cert", 0.5, {opacity: 0,  scale: 0.6, x: 60}, '-=0.2')
+          .from("#prize_mill", 0.5, {opacity: 0,  scale: 0.6, x: -60}, '-=0.2')
+          .from("#prize_cert_label", 0.5, {opacity: 0,  scale: 0.6,}, '-=0.2')
+          .from("#prize_mill_label", 0.5, {opacity: 0, scale: 0.6,}, '-=0.2')
+          .to("#prize_mill_label", 0.5, {rotation: -10, scale: 1.1,})
+          .to("#prize_mill_label", 0.5, {rotation: 0, scale: 1,})
+          // .to("#prize_mill_label", 0.5, {rotation: -10, scale: 1.1,})
+          // .to("#prize_mill_label", 0.5, {rotation: 0, scale: 1,})
 
-        .to("#txt01", 0.2, {opacity: 0}, '+=0.5')
-        .to("#txt02", 0.2, {opacity: 0}, '-=0.2')
-        .to("#txt03", 0.2, {opacity: 0}, '-=0.2')
-        .to("#nutrilon_3", 0.2, {opacity: 0}, '-=0.2')
-        .to("#nutrilon_4", 0.2, {opacity: 0}, '-=0.2')
-        .to("#prize_cert", 0.2, {opacity: 0}, '-=0.2')
-        .to("#prize_mill", 0.2, {opacity: 0}, '-=0.2')
-        .to("#prize_cert_label", 0.2, {opacity: 0}, '-=0.2')
-        .to("#prize_mill_label", 0.2, {opacity: 0}, '-=0.2')
-        .to("#blue_bottom", 0.4, {y: 0}, '-=0.2')
-        .to("#legal", 0.6, {opacity: 1}, '-=0.5')
+          .to("#txt01", 0.2, {opacity: 0}, '+=0.5')
+          .to("#txt02", 0.2, {opacity: 0}, '-=0.2')
+          .to("#txt03", 0.2, {opacity: 0}, '-=0.2')
+          .to("#nutrilon_3", 0.2, {opacity: 0}, '-=0.2')
+          .to("#nutrilon_4", 0.2, {opacity: 0}, '-=0.2')
+          .to("#prize_cert", 0.2, {opacity: 0}, '-=0.2')
+          .to("#prize_mill", 0.2, {opacity: 0}, '-=0.2')
+          .to("#prize_cert_label", 0.2, {opacity: 0}, '-=0.2')
+          .to("#prize_mill_label", 0.2, {opacity: 0}, '-=0.2')
+          .to("#blue_bottom", 0.4, {y: 0}, '-=0.2')
+          .to("#legal", 0.6, {opacity: 1}, '-=0.5')
       });
     </script>
   </head>
@@ -121,12 +121,6 @@
         </div>
 
         <div id="schirm" class="el">
-          <!-- <div id="mom2" class="el">
-            <img src="mom.png"/>
-          </div>
-          <div id="blue_bottom2" class="el">
-            <img src="blue_bottom.svg"/>
-          </div> -->
         </div>
       </div>
     </a>
