@@ -1,0 +1,239 @@
+body,
+body * {
+  vertical-align: baseline;
+  border: 0 none;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  font-size: 9pt;
+  font-weight: 700;
+  color: #f2d7ae;
+}
+
+.container {
+  position: absolute;
+  width: 360px;
+  height: 592px;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  cursor: pointer;
+  text-align: center;
+  box-sizing: border-box;
+  overflow: hidden;
+  background-color: #f2d7ae;
+  /* background-image: linear-gradient(to top, #e4ba86 0%,  #f2d7ae 100%); */
+  background-image: url('bg.jpg');
+
+  background-size: 360px;
+  border: 1px #45180e solid;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.el {
+  position: absolute;
+  /*width: 60px;*/
+  left: 0;
+  top: 0;
+}
+
+.txt {
+  width: 352px;
+  top: 0px;
+  left: 5px;
+}
+
+#blue_bottom {
+  width: 360px;
+  left: 0px;
+  top: 490px;
+}
+
+#legal {
+  width: 340px;
+  left: 10px;
+  top: 523px;
+}
+
+
+#mom {
+  width: 305px;
+  left: 23px;
+  top: 211px;
+  transform: scale(1.1) translateY(-24px);
+}
+#ellipse {
+  width: 280px;
+  left: 38px;
+  top: 98px;
+}
+
+
+#nutrilon_logo {
+  width: 164px;
+  left: 98px;
+  top: 37px;
+  /* width: 110px;
+  left: 29px;
+  top: 15px; */
+}
+#dm_logo {
+  width: 130px;
+  left: 188px;
+  top: 33px;
+}
+#slogan {
+  width: 203px;
+  left: 84px;
+  top: 125px;
+}
+#period {
+  width: 130px;
+  left: 146px;
+  top: 204px;
+}
+
+#million {
+  width: 300px;
+  /* background-color: red; */
+  height: 40px;
+  left: 29px;
+  top: 160px;
+}
+#grad_cont {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  height: 40px;
+
+  mask-image: url("million_mask.svg");
+  mask-repeat: no-repeat;
+  mask-size: 300px 40px;
+}
+@keyframes grad-anim {
+  0% {
+      left: -100%;
+  }
+
+  100% {
+      left: 200%;
+  }
+}
+
+#grad {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 40px;
+  background-image: url('grad.png');
+  background-size: cover;
+  transform: scale(1.6);
+  animation-name: grad-anim;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 15;
+  animation-fill-mode: forwards;
+}
+@keyframes mech_pack4-anim {
+  0% {
+      transform: scale(1);
+  }
+  25% {
+      transform: scale(1.06);
+  }
+  50% {
+      transform: scale(1);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+@keyframes mech_pack3-anim {
+  0%, 50% {
+      transform: scale(1);
+  }
+  75% {
+      transform: scale(1.06);
+  }
+
+  100% {
+      transform: scale(1);
+  }
+}
+
+#nutrilon_3 {
+  width: 141px;
+  left: 62px;
+  top: 12px;
+  /* animation-name: mech_pack3-anim; */
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+#nutrilon_4 {
+  width:  149px;
+  left: 168px;
+  top: 14px;
+  /* animation-name: mech_pack4-anim; */
+  animation-duration:1.5s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+#prize_cert {
+  width: 128px;
+  left: 34px;
+  top: 450px;
+}
+#prize_mill {
+  width: 197px;
+  left: 133px;
+  top: 466px;
+}
+#prize_cert_label {
+  width: 93px;
+  left: 12px;
+  top: 519px;
+}
+
+@keyframes pulse_anim {
+  0% {
+      transform: scale(1) translateY(0) rotate(5deg);
+  }
+  100% {
+      transform: scale(1.1) translateY(-2px) rotate(-10deg);
+  }
+}
+#prize_mill_label {
+  width: 53px;
+  left: 287px;
+  top: 441px;
+  transform: scale(1) translateY(0) rotate(5deg);
+  /* animation-name: pulse_anim; */
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  animation-iteration-count: 10;
+}
+
+
+
+#schirm {
+  position: absolute;
+  width: 360px;
+  height: 592px;
+  top: 0;
+  left: 0;
+  background-color: #c4a68e;
+  background-image: url('bg.jpg');
+  overflow: hidden;
+
+  opacity: 0;
+}

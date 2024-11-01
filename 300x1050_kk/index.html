@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="ad.size" content="width=300,height=1050" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/tweenlite_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/cssplugin_2.0.1_min.js"></script>
+    <script src="https://s0.2mdn.net/ads/studio/cached_libs/timelinemax_2.0.1_min.js"></script>
+    <script>
+      var clickTag = "#";
+      document.addEventListener("DOMContentLoaded", function (event) {
+        TweenLite.ticker.useRAF(false);
+        TweenLite.lagSmoothing(0);
+        var tl = new TimelineMax({ repeat: 1, repeatDelay: 3});
+
+        // setTimeout(() => console.log('aaa'), 15000)
+        // setTimeout(() => console.log('aaa'), 30000)
+        tl.from("#schirm", 0.8, { opacity: 1 })
+          .from("#nutrilon_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
+          .to("#nutrilon_logo", 0.4, {x: 0, y: 0, scale: 1}, '+=0.4')
+          .from("#dm_logo", 0.4, {opacity: 0, scale: 0.4}, '-=.5')
+          .to("#mom", 0.5, {scale: 1, y: -2}, '-=.1')
+          .from("#ellipse", 0.5, { scale: 0.7, opacity: 0}, '-=0.4')
+          .from("#slogan", 0.5, { scale: 0.7, opacity: 0}, '-=.3')
+          .from("#million", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
+          .from("#period", 0.5, { scale: 0.7, opacity: 0}, '-=.1')
+
+          // .from("#nutrilon_3", 0.5, {opacity: 0, x: -100, scale: 0.6}, '-=0.4')
+          // .from("#nutrilon_4", 0.5, {opacity: 0, x: 100, scale: 0.6}, '-=0.4')
+          .from("#txt01", 0.5, {opacity: 0, x: 200}, '-=0.1')
+          .to("#nutrilon_3", 0, {animationName: 'mech_pack3-anim'})
+          .to("#nutrilon_4", 0, {animationName: 'mech_pack4-anim'})
+          .from("#txt02", 0.5, {opacity: 0, x: 200}, '+=0.3')
+          .from("#txt03", 0.5, {opacity: 0, x: 200}, '+=0.3')
+          .from("#prize_cert", 0.5, {opacity: 0,  scale: 0.6, x: 60}, '-=0.2')
+          .from("#prize_mill", 0.5, {opacity: 0,  scale: 0.6, x: -60}, '-=0.2')
+          .from("#prize_cert_label", 0.5, {opacity: 0,  scale: 0.6,}, '-=0.2')
+          .from("#prize_mill_label", 0.5, {opacity: 0, scale: 0.6,}, '-=0.2')
+          .to("#prize_mill_label", 0.5, {rotation: -10, scale: 1.1,})
+          .to("#prize_mill_label", 0.5, {rotation: 0, scale: 1,})
+
+          // .to("#txt01", 0.2, {opacity: 0}, '+=0.5')
+          // .to("#txt02", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#txt03", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#nutrilon_3", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#nutrilon_4", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#prize_cert", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#prize_mill", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#prize_cert_label", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#prize_mill_label", 0.2, {opacity: 0}, '-=0.2')
+          // .to("#blue_bottom", 0.4, {y: 0}, '-=0.2')
+          // .to("#legal", 0.6, {opacity: 1}, '-=0.5')
+      });
+    </script>
+  </head>
+  <body>
+    <a href="javascript:window.open(window.clickTag)">
+      <div class="container">
+        <div id="ellipse" class="el">
+          <img src="ellipse.svg"/>
+        </div>
+        <div id="mom" class="el">
+          <img src="mom.png"/>
+        </div>
+        <div id="nutrilon_logo" class="el">
+          <img src="nutrilon_logo.png"/>
+        </div>
+        <div id="dm_logo" class="el">
+          <img src="dm_logo.png"/>
+        </div>
+        <div id="slogan" class="el">
+          <img src="slogan.svg"/>
+        </div>
+        <div id="million" class="el">
+          <img src="million.svg"/>
+          <div id="grad_cont">
+              <div id="grad">
+              </div>
+          </div>
+      </div>
+        <div id="period" class="el">
+          <img src="period.svg"/>
+        </div>
+        <div id="blue_bottom" class="el">
+          <img src="blue_bottom.svg"/>
+        </div>
+        <div id="legal" class="el">
+          <img src="legal.svg"/>
+        </div>
+        <div id="nutrilon_3" class="el">
+          <img src="nutrilon_3.png"/>
+        </div>
+        <div id="nutrilon_4" class="el">
+          <img src="nutrilon_4.png"/>
+        </div>
+        <div id="txt01" class="el  txt">
+          <img src="txt01.svg"/>
+        </div>
+        <div id="txt02" class="el  txt">
+          <img src="txt02.svg"/>
+        </div>
+        <div id="txt03" class="el  txt">
+          <img src="txt03.svg"/>
+        </div>
+        <div id="prize_cert" class="el">
+          <img src="prize_cert.png"/>
+        </div>
+        <div id="prize_mill" class="el">
+          <img src="prize_mill.png"/>
+        </div>
+        <div id="prize_cert_label" class="el">
+          <img src="prize_cert_label.svg"/>
+        </div>
+        <div id="prize_mill_label" class="el">
+          <img src="prize_mill_label.svg"/>
+        </div>
+
+        <div id="schirm" class="el">
+        </div>
+      </div>
+    </a>
+  </body>
+</html>
